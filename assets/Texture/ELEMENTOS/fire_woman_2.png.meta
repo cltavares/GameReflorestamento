@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "aa76dda2-e061-45af-a818-e68e383c2f80",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 900,
+  "height": 900,
+  "platformSettings": {},
+  "subMetas": {
+    "fire_woman_2": {
+      "ver": "1.0.4",
+      "uuid": "db31a3d9-df21-4548-b223-eea3c0f38b3d",
+      "rawTextureUuid": "aa76dda2-e061-45af-a818-e68e383c2f80",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 11.5,
+      "offsetY": 2.5,
+      "trimX": 149,
+      "trimY": 10,
+      "width": 625,
+      "height": 875,
+      "rawWidth": 900,
+      "rawHeight": 900,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
