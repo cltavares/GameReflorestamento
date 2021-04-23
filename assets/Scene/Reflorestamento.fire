@@ -1607,6 +1607,7 @@
     "tempoMax": 10,
     "score": 0,
     "maxLife": 2,
+    "qtdPlantaFase": 2,
     "isLaunch": false,
     "_id": "71jxK7zKhBNrkVF03UPPvg"
   },

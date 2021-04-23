@@ -1555,7 +1555,7 @@
     "_id": "59Cd0ovbdF4byw5sbjJDx7"
   },
   {
-    "__type__": "bbd26lZWKJGGrUoRbicTj5M",
+    "__type__": "fa678bIXyBIbZ/XeUF02h3F",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1604,12 +1604,12 @@
       "__id__": 28
     },
     "tempoMin": 4,
-    "tempoMax": 10,
+    "tempoMax": 8,
     "score": 0,
     "maxLife": 3,
-    "qtdPlantaFase": 3,
+    "qtdPlantaFase": 4,
     "isLaunch": false,
-    "_id": "bb1AMY4epFp4YdZ4N+dpaz"
+    "_id": "fa40SiBlBHe4i/kuvivKfW"
   },
   {
     "__type__": "cc.Layout",

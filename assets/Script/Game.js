@@ -42,6 +42,7 @@ cc.Class({
         tempoMax: 0,
         score: 0,
         maxLife: 0,
+        qtdPlantaFase: 0,
         isLaunch: false
 
     },
@@ -168,8 +169,8 @@ cc.Class({
         cc.log('scoreLabel novo');
         this.scoreLabel.string = score.toString();
 
-        //primeira fase
-        if (score === 2 ){
+        //passa de fase.
+        if (score === this.qtdPlantaFase ){
             cc.log('passar de 1 fase.');
             this.btn_iniciar.setPosition(153.386,-432.787);
             this.btn_avanca_fase.setPosition(0,4.441);
