@@ -10,7 +10,6 @@
   "excluded-modules": [
     "3D Physics/Builtin"
   ],
-  "start-scene": "9405cb36-c742-4532-8481-e49561ae94da",
   "preview-port": 7456,
   "design-resolution-width": 960,
   "design-resolution-height": 640,
