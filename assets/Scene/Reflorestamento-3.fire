@@ -888,7 +888,7 @@
       "width": 640,
       "height": 960
     },
-    "_fitWidth": false,
+    "_fitWidth": true,
     "_fitHeight": true,
     "_id": "59Cd0ovbdF4byw5sbjJDx7"
   },
@@ -942,7 +942,7 @@
     "tempoMax": 10,
     "score": 0,
     "maxLife": 2,
-    "qtdPlantaFase": 2,
+    "qtdPlantaFase": 4,
     "selecionadaFase": 3,
     "isLaunch": false,
     "_id": "3d23kAhh5JXZxuyII6hL4R"
