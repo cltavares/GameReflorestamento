@@ -3,12 +3,12 @@ cc.Class({
    
     // use this for initialization
     onLoad: function () {
-        cc.director.preloadScene('Reflorestamento-2');
+        cc.director.preloadScene('Reflorestamento');
         
         this.node.on('touchend', function(){
-            cc.log("TESTE-fase-2");
+            cc.log("TESTE");
             window.score = 0;
-            cc.director.loadScene('Reflorestamento-2');
+            cc.director.loadScene('Reflorestamento');
             cc.director.resume();
         });
 

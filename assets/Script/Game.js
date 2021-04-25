@@ -6,7 +6,7 @@ cc.Class({
             default: null,
             type: cc.Node
         },
-        btn_iniciar:{
+        btn_play:{
             default: null,
             type: cc.Node
         },
@@ -34,15 +34,13 @@ cc.Class({
             default: null,
             type: cc.Layout
         },
-        btn_avanca_fase:{
-            default: null,
-            type: cc.Node
-        },        
+                
         tempoMin: 0,
         tempoMax: 0,
         score: 0,
         maxLife: 0,
         qtdPlantaFase: 0,
+        selecionadaFase: 0,
         isLaunch: false
 
     },
@@ -67,8 +65,8 @@ cc.Class({
 
         this.scoreLabel.string = score.toString();        
         this.plantaLayer.node.setContentSize(this.background.width, this.background.height);
-        this.btn_iniciar.setPosition(1000,1000);
-        this.btn_avanca_fase.setPosition(1000,1000);
+        this.btn_play.setPosition(1000,1000);
+        
     },
 
     initGame: function(){
@@ -166,17 +164,41 @@ cc.Class({
     },
 
     exibirScore: function() {
-        cc.log('scoreLabel novo');
+         
         this.scoreLabel.string = score.toString();
 
-        //passa de fase.
-        if (score === this.qtdPlantaFase ){
-            cc.log('passar de 1 fase.');
-            this.btn_iniciar.setPosition(153.386,-432.787);
-            this.btn_avanca_fase.setPosition(0,4.441);
-            cc.director.pause();
-        }
+        //transicao de fases
+        if (this.selecionadaFase == 1 && score === this.qtdPlantaFase){
 
+            cc.log('selecionadaFase1');
+            cc.log(this.selecionadaFase);
+    
+            cc.log('qtdPlantaFase1');
+            cc.log(this.qtdPlantaFase);
+
+            
+            cc.director.loadScene('Transição_de_Fase-1p2');
+        }else if (this.selecionadaFase == 2 && score === this.qtdPlantaFase){
+
+              cc.log('selecionadaFase2');
+              cc.log(this.selecionadaFase);
+      
+              cc.log('qtdPlantaFase2');
+              cc.log(this.qtdPlantaFase);
+  
+              
+              cc.director.loadScene('Transição_de_Fase-2p3');
+          }else if (this.selecionadaFase == 3 && score === this.qtdPlantaFase){
+
+              cc.log('selecionadaFasefinal');
+              cc.log(this.selecionadaFase);
+      
+              cc.log('qtdPlantaFasefinal');
+              cc.log(this.qtdPlantaFase);
+  
+              
+              cc.director.loadScene('Final');
+          }
     },
 
     gameOver: function (){
@@ -185,12 +207,9 @@ cc.Class({
              this.gameOverLayer.node.active = true;
              
              this.plantaLayer.node.stopAllActions();
-             this.plantaLayer.node.removeAllChildren();
-             
-             cc.log('scoreLabel gameOver');
-             //window.score = 0;
-             //this.exibirScore();             
-             this.btn_iniciar.setPosition(153.386,-432.787);
+             this.plantaLayer.node.removeAllChildren();             
+           
+             this.btn_play.setPosition(265.685, 384.284);
         }else{
             this.life--;
             this.lifeLabel.string = this.life.toString();
@@ -199,9 +218,7 @@ cc.Class({
 
 
     update (dt) {  
-        cc.log('update');      
         this.gerarPlanta(dt);
         this.exibirScore();
-
     },
 });
