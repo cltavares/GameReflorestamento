@@ -1422,6 +1422,9 @@
     "plantaLayer": {
       "__id__": 31
     },
+    "gameOverAudio": {
+      "__uuid__": "442b4d8d-0dba-4ed9-a71b-acbd4bbbcd3a"
+    },
     "tempoMin": 2,
     "tempoMax": 10,
     "score": 0,

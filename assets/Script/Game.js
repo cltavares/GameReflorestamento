@@ -33,8 +33,11 @@ cc.Class({
         plantaLayer:{
             default: null,
             type: cc.Layout
-        },
-                
+        }, 
+        gameOverAudio:{
+            default: null,
+            type: cc.AudioClip
+        },               
         tempoMin: 0,
         tempoMax: 0,
         score: 0,
@@ -210,6 +213,7 @@ cc.Class({
              this.plantaLayer.node.removeAllChildren();             
            
              this.btn_play.setPosition(265.685, 384.284);
+             cc.audioEngine.playEffect(this.gameOverAudio, false);
         }else{
             this.life--;
             this.lifeLabel.string = this.life.toString();

@@ -1,6 +1,5 @@
 cc.Class({
-    extends: cc.Component,
-   
+    extends: cc.Component, 
     // use this for initialization
     onLoad: function () {
         cc.director.preloadScene('Reflorestamento');
