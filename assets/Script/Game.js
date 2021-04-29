@@ -59,13 +59,6 @@ cc.Class({
             self.initGame();
         }, 1);
 
-        /*
-        self.node.on('planta_pega', function(event) {
-            cc.log('planta_pega GAME');
-            plantaCount--;
-        }, self);
-        */
-
         this.scoreLabel.string = score.toString();        
         this.plantaLayer.node.setContentSize(this.background.width, this.background.height);
         this.btn_play.setPosition(1000,1000);
@@ -75,8 +68,6 @@ cc.Class({
     initGame: function(){
         this.life = this.maxLife;
         this.lifeLabel.string = this.life.toString();
-        
-        //this.scoreLabel.string = score.toString();
         
         this.isLaunch = true;
     },
@@ -97,10 +88,11 @@ cc.Class({
         if (this.isLaunch === false){
             return;
         }
-        
+        /*
         if (this.plantaCount > 5){
             return;
         }
+        */
         
         this.delta += dt;
         //gera a planta 1 s
@@ -124,9 +116,10 @@ cc.Class({
         
         var totalPlanta = this.plantas.length - 1;
         
-        //var planta = cc.instantiate(this.plantas[0]);
+        
         var planta = cc.instantiate(this.plantas[Math.ceil(totalPlanta * Math.random())]);
         
+          
         planta.setPosition(localAleatorioX, localAleatorioY);
 
 

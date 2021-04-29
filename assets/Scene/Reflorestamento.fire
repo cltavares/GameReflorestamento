@@ -23,7 +23,7 @@
         "__id__": 31
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_opacity": 255,
@@ -1404,6 +1404,9 @@
       },
       {
         "__uuid__": "70bbf25c-5380-4174-b865-c30b91ad1421"
+      },
+      {
+        "__uuid__": "339f6d5e-f437-468b-a52b-65a56e8ef6c4"
       }
     ],
     "plantaLayer": {
@@ -1493,8 +1496,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        1.9680000000000177,
-        4.475000000000023,
+        1.999,
+        0,
         0,
         0,
         0,
