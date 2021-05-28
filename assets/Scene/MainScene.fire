@@ -203,7 +203,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "T_INICIAL",
+    "_name": "Tela_INICIAL",
     "_objFlags": 0,
     "_parent": {
       "__id__": 3
@@ -261,7 +261,7 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "12npZt3l5M8Leq34K7SKi5"
+    "_id": "cdK4/oU1VDvp942PRcDR/G"
   },
   {
     "__type__": "cc.Sprite",
@@ -279,7 +279,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "912e3870-39f0-42e8-8ed0-9f9b535e71c6"
+      "__uuid__": "5fa36322-98ab-4753-a011-3357085d5247"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -293,7 +293,7 @@
     "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null,
-    "_id": "f5FsNvXVdC/6LjwnEl+7em"
+    "_id": "3c/TP8mU9A6KyToyT3Xg1w"
   },
   {
     "__type__": "cc.Node",
@@ -495,7 +495,7 @@
     },
     "_enabled": true,
     "_clip": {
-      "__uuid__": "05d867ef-b880-4bc9-9b58-3812d9425b80"
+      "__uuid__": "f1dc3a81-0c2e-4d92-8211-9c4d50bbc1d1"
     },
     "_volume": 1,
     "_mute": false,

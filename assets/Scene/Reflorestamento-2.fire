@@ -1431,8 +1431,8 @@
     "tempoMin": 2,
     "tempoMax": 10,
     "score": 0,
-    "maxLife": 3,
-    "qtdPlantaFase": 4,
+    "maxLife": 4,
+    "qtdPlantaFase": 15,
     "selecionadaFase": 2,
     "isLaunch": false,
     "_id": "37l/BVwJJLE7fwrxyp+tiK"
@@ -1603,8 +1603,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        122.774,
-        145.829,
+        124.773,
+        159.819,
         0,
         0,
         0,
